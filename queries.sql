@@ -36,10 +36,10 @@ CREATE TABLE funcionarios (
 );
 
 INSERT INTO clientes (nome, email)
-VALUES ('Ana Costa', 'ana.costa@example.com');
+VALUES ('Tiago Ferreira', 'tiagoferreiraoliveir@gmail.com');
 
 SELECT * FROM clientes
-WHERE email = 'ana.costa@example.com';
+WHERE email = 'tiagoferreiraoliveir@gmail.com';
 
 
 INSERT INTO produtos (nome, preco)
@@ -56,28 +56,28 @@ SELECT * FROM pedidos
 WHERE cliente_id = 1 AND produto_id = 1;
 
 INSERT INTO fornecedores (nome, telefone)
-VALUES ('Fornecedor X', '1234-5678');
+VALUES ('Despacho 99', '9999-9999');
 
 
 SELECT * FROM fornecedores
-WHERE nome = 'Fornecedor X';
+WHERE nome = 'Despacho 99';
 
 
 INSERT INTO funcionarios (nome, cargo)
-VALUES ('João Almeida', 'Analista');
+VALUES ('João Gabriel', 'Analista');
 
 
 SELECT * FROM funcionarios
-WHERE nome = 'João Almeida';
+WHERE nome = 'João Gabriel';
 
 
 UPDATE clientes
-SET email = 'ana.novo@example.com'
-WHERE nome = 'Ana Costa';
+SET email = 'tiagoferreiraoliveir@gmail.com'
+WHERE nome = 'Tiago Ferreira';
 
 
 SELECT * FROM clientes
-WHERE nome = 'Ana Costa';
+WHERE nome = 'Tiago Ferreira';
 
 
 UPDATE produtos
@@ -99,29 +99,29 @@ WHERE id = 1;
 
 
 UPDATE fornecedores
-SET telefone = '8765-4321'
-WHERE nome = 'Fornecedor X';
+SET telefone = '9999-9988'
+WHERE nome = 'Despacho 99';
 
 
 SELECT * FROM fornecedores
-WHERE nome = 'Fornecedor X';
+WHERE nome = 'Despacho 99';
 
 
 UPDATE funcionarios
-SET cargo = 'Coordenador'
-WHERE nome = 'João Almeida';
+SET cargo = 'Gerente'
+WHERE nome = 'João Gabriel';
 
 
 SELECT * FROM funcionarios
-WHERE nome = 'João Almeida';
+WHERE nome = 'João Gabriel';
 
 
 DELETE FROM clientes
-WHERE nome = 'Ana Costa';
+WHERE nome = 'Tiago Ferreira';
 
 
 SELECT * FROM clientes
-WHERE nome = 'Ana Costa';
+WHERE nome = 'Tiago Ferreira';
 
 
 DELETE FROM produtos
@@ -141,16 +141,16 @@ WHERE id = 1;
 
 
 DELETE FROM fornecedores
-WHERE nome = 'Fornecedor X';
+WHERE nome = 'Despacho 99';
 
 
 SELECT * FROM fornecedores
-WHERE nome = 'Fornecedor X';
+WHERE nome = 'Despacho 99';
 
 
 DELETE FROM funcionarios
-WHERE nome = 'João Almeida';
+WHERE nome = 'João Gabriel';
 
 
 SELECT * FROM funcionarios
-WHERE nome = 'João Almeida';
+WHERE nome = 'João Gabriel';
